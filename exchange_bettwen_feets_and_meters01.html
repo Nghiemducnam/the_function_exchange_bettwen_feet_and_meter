@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var input1= parseFloat(prompt("Nhập vào số lượng cần chuyển"));
+    var input2 = parseInt(prompt("Chuyển từ mét sang feet chọn 2, ngược lại chọn 1"));
+    var result;
+
+        if (input2 == 1) {
+            result = feetToMeter(input1)
+        } else if(input2== 2) {
+            result = meterToFeet(input1)
+        }else {
+            alert("xin mời nhập lại đơn vị chuyển đổi")
+        }
+
+       function feetToMeter(value) {
+        return 0.305* value;
+    }
+    function meterToFeet(value) {
+        return 3.279* value;
+    }
+       alert(result);
+</script>
+
+</body>
+</html>
